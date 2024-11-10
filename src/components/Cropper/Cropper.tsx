@@ -111,7 +111,7 @@ const Cropper: FC<CropperProps> = ({ src, onCrop }) => {
     const img = imgRef.current;
     if (canvas && img) {
       const ctx = canvas.getContext("2d");
-      const imgBounds = img.getBoundingClientRect();
+      //const imgBounds = img.getBoundingClientRect();
 
       // Calculate cropping width and height
       const cropWidth = cropBox.x2 - cropBox.x1;
